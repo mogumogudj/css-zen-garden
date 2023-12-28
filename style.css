@@ -1,0 +1,1302 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --lime: #00FF1E;
+  --yellow: #e0e010;
+  --black: #000000;
+  --electrolize: 'Electrolize', sans-serif;
+  --orbitron: 'Orbitron', sans-serif;
+  --audiowide: 'Audiowide', cursive;
+
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	color: var(--white);
+	line-height: 1.88889;
+	animation: flicker 0.2s 3;
+	animation-delay: 10s;
+	cursor: url("https://pearlvintagestore.com/Techno/smileCursor.png"), auto;
+}
+
+@keyframes flicker {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font-style: italic;
+	font-size: 28px;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: var(--lime);
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: var(--lime);
+	cursor: url("Smile.png"), auto;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: var(--yellow);
+	}
+a:hover, a:focus, a:active { 
+	text-decoration:line-through; 
+	color: var(--yellow);
+	}
+abbr {
+	border-bottom: none;
+	}
+
+/* specific divs */
+.page-wrapper { 
+	background: url(zen-bg.jpg) no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	z-index: 5;
+	font-family: 'Orbitron', sans-serif;
+	text-transform: uppercase;
+	color: var(--white);
+	font-size: 52px;
+	font-weight: 900;
+	text-shadow: 2px 2px 4px var(--lime);
+	background-color: #000000;
+	padding: 12px;
+	width: 100%;
+	margin-top: 0px;
+	float: left;
+	position: fixed;
+	left: 0%;
+    top: 0%;
+	}
+
+	header h1:hover {
+		color: var(--lime);
+		text-shadow: 2px 2px 4px var(--white);
+	}
+
+header h2 { 
+	z-index: 4;
+	font-family: 'Electrolize', sans-serif;
+	text-transform: uppercase;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 900;
+	text-shadow: 2px 2px 4px var(--lime);
+	width: 90%;
+	transform: rotate(-90deg);
+    transform-origin: top left;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    position: fixed;
+    left: 4px;
+    top: 63%;
+	}
+
+	header h2:hover {
+		color: var(--lime);
+		text-shadow: 2px 2px 4px var(--white);
+	}
+
+/* Techno Shapes */
+     /* VVV */
+    .extra1 { /* Donut */
+	background-image: url("https://pearlvintagestore.com/Techno/Donut.svg");
+	background-repeat: no-repeat;
+	background-size: 400px;
+	background-position:center;
+	position: absolute; 
+	top: 100px; 
+	left: 200px; 
+	width: 380px; 
+	height: 320px;
+	animation: spin 1.5s linear infinite;
+	}
+	@keyframes spin {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	}
+
+	.extra2 { /* Rocket */
+	background-image: url("https://pearlvintagestore.com/Techno/Rocket.svg");
+	background-repeat: no-repeat;
+	background-size: 500px;
+	background-position:center;
+	position: absolute; 
+	top: 420px; 
+	right: 200px; 
+	width: 400px; 
+	height: 400px;
+	transition: transform 0.5s ease;
+	}
+    .extra2:hover {
+	transform: translateX(50px) rotate(90deg);
+    }
+
+	.extra3 { /* Kriskras */
+	background-image: url("https://pearlvintagestore.com/Techno/Kriskras.svg");
+	background-repeat: no-repeat;
+	background-size: 350px;
+	background-position:center;
+	position: absolute; 
+	top: 800px; 
+	left: 180px; 
+	width: 400px; 
+	height: 400px;
+	animation: none;
+	}
+	.extra3:hover {
+		animation: blinkAnimation 0.1s infinite;
+		}
+
+	.extra4 { /* Star */
+	background-image: url("https://pearlvintagestore.com/Techno/Star.svg");
+	background-repeat: no-repeat;
+	background-size: 500px;
+	background-position: center;
+	position: absolute; 
+	top: 1400px; 
+	right: 180px; 
+	width: 400px; 
+	height: 400px;
+	animation: blinkAnimation 1s infinite;
+	}
+	@keyframes blinkAnimation {
+		0% {
+		  opacity: 1;
+		}
+		50% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+	  }
+
+	.extra5 { /* Planet */
+	background-image: url("https://pearlvintagestore.com/Techno/Planet.svg");
+	background-repeat: no-repeat;
+	background-size: 400px;
+	background-position: center;
+	position: absolute; 
+	top: 1850px; 
+	left: 180px; 
+	width: 300px; 
+	height: 300px;
+	transition: transform 0.8s ease;
+	}
+	.extra5:hover {
+	transform: scale(2);
+	} 
+
+	/* Techno shapes */
+
+	
+
+	
+		.sidebar { /* right sidebar */
+			margin-left: 600px; 
+			position: absolute; 
+			top: 280px; 
+			right: 0;
+			}
+		.sidebar .wrapper { 
+			background: transparent url(paper-bg.jpg) top left repeat-y; 
+			padding: 10px; 
+			margin-top: 150px; 
+			width: 130px; 
+			}
+		.sidebar h3.select { 
+			background: transparent url(h3.gif) no-repeat top left; 
+			margin: 10px 0 5px 0; 
+			width: 97px; 
+			height: 16px;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			}
+		.sidebar h3.archives { 
+			background: transparent url(h5.gif) no-repeat top left; 
+			margin: 25px 0 5px 0; 
+			width:57px; 
+			height: 14px; 
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			}
+		.sidebar h3.resources { 
+			background: transparent url(h6.gif) no-repeat top left; 
+			margin: 25px 0 5px 0; 
+			width:63px; 
+			height: 10px; 
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			}
+		.sidebar ul {
+			margin: 0;
+			padding: 0;
+			}
+		.sidebar li {
+			line-height: 1.3em; 
+			background: transparent url(cr1.gif) no-repeat top center; 
+			display: block; 
+			padding-top: 5px; 
+			margin-bottom: 5px;
+			list-style-type: none;
+			}
+			.sidebar li a:nth-last-child(1) {
+				font-size: 12px;
+				text-transform: uppercase;
+				color: var(--white);
+				text-align: center;
+			}
+			.sidebar li a:nth-last-child(2) {
+				font-family: var(--audiowide);
+				text-transform: uppercase;
+				font-size: 12px;
+				color: var(--lime);
+				text-align: center;
+			}
+
+			.design-selection {
+				font-family: var(--orbitron);
+				margin: 16px;
+				padding-left: 4px;
+				text-transform: lowercase;
+				color: var(--white);
+				font-weight: 400;
+				font-size: 8px;
+				text-align: right;
+			} 
+
+			.design-archives {
+				font-family: var(--orbitron);
+				position: absolute;
+				text-transform: uppercase;
+				font-size: 12px;
+				color: var(--lime);
+				text-align: right;
+				top: 720px;
+				width: 40px;
+				direction: rtl;
+				right: 0;
+				margin: 28px;
+			}
+
+			.zen-resources {
+				font-family: var(--orbitron);
+				position: absolute;
+				text-transform: uppercase;
+				font-size: 12px;
+				color: var(--white);
+				text-align: right;
+				top: 1200px;
+				width: 40px;
+				direction: rtl;
+				right: 0;
+				margin: 28px;
+			} /* right sidebar */
+
+				/* left sidebar */
+	
+	.requirements p[role="contentinfo"] {
+		color: var(--white);
+		position: absolute; 
+		top: 540px; 
+		left: 700px;
+		padding: 24px; 
+		width: 400px; 
+	}
+
+	.requirements p[role="contentinfo"] a[href="http://www.mezzoblue.com/"] {
+		font-family: var(--orbitron);
+		font-size: 18px;
+		text-transform: uppercase;
+	  }
+	  
+	  p[role="contentinfo"] a[href="http://www.mediatemple.net/"] {
+		font-family: var(--electrolize);
+		text-transform: uppercase;
+		font-size: 12px;
+	  }
+	  
+	  p[role="contentinfo"] a[href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/"] {
+		font-family: var(--audiowide);
+		font-size: 16px;
+		text-transform: uppercase;
+	  }
+	/* left sidebar */
+
+
+			/* footer */
+	.summary {
+		position: relative;
+		z-index: -1;
+		background-image: url("https://pearlvintagestore.com/Techno/Terrain_thin.svg");
+		background-size: cover;
+		background-position: center;
+		padding: 160px;
+		height: 300px;
+		width: 100%;
+		bottom: 0;
+		right: 120px;
+		top: 1900px;
+	}
+	.summary p {
+		color: var(--white);
+		text-align: center;
+		position: relative;
+		top: 180px;
+		font-family: var(--electrolize);
+		letter-spacing: 2px;
+	}
+	.summary a {
+		color: var(--white);
+		position: relative;
+		text-align: center;
+		padding: 8px;
+		background-color: var(--lime);
+		border-radius: 16px;
+	}
+
+	.summary a:hover {
+		color: black;
+		position: relative;
+		text-align: center;
+		padding: 8px;
+		background-color: var(--yellow);
+	}
+
+	footer {
+		color: var(--white);
+		position: absolute; 
+		top: 2000px; 
+		left: 780px;
+		padding: 24px; 
+		width: 400px; 
+		text-align: center;
+		font-size: 12px;
+	}
+
+	   /* Paragraphs */
+	/* VVVVVVVVVVVVVVVV */
+
+	/* The Road to Enlightenment */
+
+	.preamble {
+		position: relative;
+		width: 600px;
+		bottom: 460px;
+		float: right;
+		line-height: 1.2;
+	}
+
+	.preamble h3 {
+		font-family: var(--audiowide);
+		direction: rtl;
+	}
+
+	.preamble p {
+		font-family: var(--electrolize);
+		letter-spacing: -1.2px;
+	}
+
+	/* CSS */
+	.preamble abbr[title="Cascading Style Sheets"] {
+		font-family: var(--electrolize);
+		font-size: 48px;
+		font-weight: bolder;
+		color: var(--lime);
+	}	  
+	.preamble abbr[title="Cascading Style Sheets"]:hover {
+		font-family: var(--electrolize);
+		font-size: 48px;
+		font-weight: bolder;
+		color: var(--yellow);
+		animation: blinkAnimation 0.2s infinite;
+	}	
+
+	/* DOM */
+	.preamble abbr[title="Document Object Model"] {
+		font-family: var(--audiowide);
+		font-size: 28px;
+		font-weight: bolder;
+	  }
+
+	  /* WaSP */
+	.preamble abbr[title="Web Standards Project"] {
+		font-family: var(--orbitron);
+		font-size: 20px;
+		font-weight: thin;
+	  }
+	  
+	  /* W3C */
+	.preamble abbr[title="World Wide Web Consortium"] {
+		font-family: var(--electrolize);
+		font-size: 24px;
+		font-weight: thin;
+	  }
+	  
+
+	/* So What is This About? */
+	.explanation {
+		position: absolute;
+		width: 760px;
+		top: 430px;
+		left: 80px;
+		line-height: 1;
+	}
+
+	.explanation h3 {
+		font-family: var(--audiowide);
+	}
+
+	.explanation p {
+		font-family: var(--electrolize);
+		letter-spacing: 1px;
+	}
+
+	  /* HTML */
+	.explanation p abbr[title="HyperText Markup Language"] {
+		font-family: var(--audiowide);
+		font-size: 32px;
+		font-weight: bolder;
+		color: var(--lime);
+	  }
+
+	  .explanation p abbr[title="HyperText Markup Language"]:hover {
+		animation: blinkAnimation 0.2s infinite;
+		color: var(--yellow);
+	  }
+	  
+	
+	/* Participation */
+	.participation {
+		position: absolute;
+		width: 600px;
+		top: 840px;
+		right: 200px;
+	}
+
+	.participation h3 {
+		font-family: var(--audiowide);
+		direction: rtl;
+	}
+
+	.participation p {
+		font-family: var(--electrolize);
+		letter-spacing: -1.2px;
+	}
+
+	.participation a[href="http://www.mezzoblue.com/zengarden/submit/"] {
+		font-family: var(--audiowide);
+		font-size: 28px;
+		font-weight: bolder;
+		color: var(--yellow);
+	}
+	
+	.participation a[href="http://www.mezzoblue.com/zengarden/submit/"]:hover {
+		color: var(--white);
+		animation: blinkAnimation 0.5s infinite;
+		text-decoration: none;
+		transition: transform 0.8s ease;
+	}
+
+	.participation a[href="http://www.mezzoblue.com/zengarden/resources/"] {
+		font-family: var(--electrolize);
+		font-size: 28px;
+		font-weight: bolder;
+		color: var(--white);
+	}
+
+	.participation p abbr[title="HyperText Markup Language"] {
+		font-family: var(--orbitron);
+		font-size: 20px;
+		font-weight: bolder;
+		color: var(--lime);
+	  }
+
+	.participation p abbr[title="HyperText Markup Language"]:hover {
+		animation: blinkAnimation 0.2s infinite;
+		color: var(--black);
+	  }
+
+
+
+	.benefits {
+		position: absolute;
+		width: 760px;
+		top: 1300px;
+		left: 80px;
+	}
+
+	.benefits h3 {
+		font-family: var(--audiowide);
+	}
+
+	.benefits p {
+		font-family: var(--electrolize);
+		letter-spacing: -1.2px;
+	}
+
+	.benefits abbr[title="Cascading Style Sheets"] {
+		color: var(--lime);
+		font-size: 28px;
+		font-family: var(--electrolize);
+}
+
+	.benefits abbr[title="Cascading Style Sheets"]:hover {
+		color: var(--white);
+}
+
+	.requirements {
+		position: absolute;
+		width: 760px;
+		top: 1500px;
+		left: 80px;
+		line-height: 1.2;
+}
+
+	.requirements h3{
+		font-family: var(--audiowide);
+}
+
+	.requirements p {
+		font-family: var(--electrolize);
+		letter-spacing: -1.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+
+	    .extra1 { /* Donut */
+	    top: 200px; 
+	    left: 40px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 1000px; 
+			left: 32px; 
+		}
+
+		.extra3 { /* Kriskras */
+			top: 2000px; 
+			left: 64px;
+		}
+
+		.extra4 { /* Star */
+			top: 3240px; 
+			left: 64px; 
+		}
+
+		.extra5 { /* Planet */
+			top: 4800px; 
+			left: 100px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			text-align: center;
+			width: 280px;
+			right: 240px;
+			bottom: 120px;
+		}
+        /* So What is This About? */
+		.explanation {
+			text-align: center;
+			width: 360px;
+			position: relative;
+			top: 800px;
+			left: 0;
+		}
+
+		/* Participation */
+		.participation {
+			width: 280px;
+			position: relative;
+			top: 1124px;
+			left: 0;
+			text-align: center;
+		}
+
+		/* Benefits */
+		.benefits {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 0;
+		}
+
+		/* Requirements */
+		.requirements {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 0;
+		}
+
+		footer {
+			position: absolute;
+			top: 5100px;
+			left: 24px;
+		}
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 0px;;
+			left: -80px;
+			text-align: center;
+		}
+
+		.summary {
+			position: relative;
+			top: 5000px;
+		}
+
+		.summary p {
+			text-align: center;
+			right: 64px;
+			width: 320px;
+			top: 20px;
+		}
+  }
+
+  @media (min-width: 600px) and (max-width: 724px) {
+
+	    .extra1 { /* Donut */
+	    top: 200px; 
+	    left: 100px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 1000px; 
+			left: 80px; 
+		}
+
+		.extra3 { /* Kriskras */
+			top: 2000px; 
+			left: 100px; 
+		}
+
+		.extra4 { /* Star */
+			top: 3240px; 
+			left: 120px; 
+		}
+
+		.extra5 { /* Planet */
+			top: 4800px; 
+			left: 160px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			text-align: center;
+			width: 280px;
+			right: 160px;
+			bottom: 120px;
+		}
+        /* So What is This About? */
+		.explanation {
+			text-align: center;
+			width: 380px;
+			position: relative;
+			top: 800px;
+			left: 80px;
+		}
+
+		/* Participation */
+		.participation {
+			width: 280px;
+			position: relative;
+			top: 1124px;
+			left: 52px;
+			text-align: center;
+		}
+
+		/* Benefits */
+		.benefits {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 60px;
+		}
+
+		/* Requirements */
+		.requirements {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 60px;
+		}
+
+		footer {
+			position: absolute;
+			top: 5124px;
+			left: 84px;
+		}
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 0px;;
+			left: -80px;
+			text-align: center;
+		}
+
+		.summary {
+			position: relative;
+			top: 5000px;
+		}
+
+		.summary p {
+			text-align: center;
+			right: 8px;
+			width: 320px;
+			top: 20px;
+		}
+
+  }
+
+  @media (min-width: 724px) and (max-width: 824px) {
+	
+	.extra1 { /* Donut */
+	top: 200px; 
+	left: 100px; 
+	}
+
+	.extra2 { /* Rocket */
+		top: 1000px; 
+		left: 80px; 
+	}
+
+	.extra3 { /* Kriskras */
+		top: 2000px; 
+		left: 100px; 
+	}
+
+	.extra4 { /* Star */
+		top: 3240px; 
+		left: 120px; 
+	}
+
+	.extra5 { /* Planet */
+		top: 4800px; 
+		left: 160px; 
+	}
+
+
+
+	/* The Road to Enlightenment  */
+	.preamble {
+		text-align: center;
+		width: 280px;
+		right: 160px;
+		bottom: 120px;
+	}
+	/* So What is This About? */
+	.explanation {
+		text-align: center;
+		width: 380px;
+		position: relative;
+		top: 800px;
+		left: 80px;
+	}
+
+	/* Participation */
+	.participation {
+		width: 280px;
+		position: relative;
+		top: 1124px;
+		left: 52px;
+		text-align: center;
+	}
+
+	/* Benefits */
+	.benefits {
+		text-align: center;
+		width: 280px;
+		position: relative;
+		top: 1480px;
+		left: 60px;
+	}
+
+	/* Requirements */
+	.requirements {
+		text-align: center;
+		width: 280px;
+		position: relative;
+		top: 1480px;
+		left: 60px;
+	}
+
+	footer {
+		position: absolute;
+		top: 5124px;
+		left: 84px;
+	}
+
+	.requirements p[role="contentinfo"] {
+		position: relative;
+		top: 0px;;
+		left: -80px;
+		text-align: center;
+	}
+
+	.summary {
+		position: relative;
+		top: 5000px;
+	}
+
+	.summary p {
+		text-align: center;
+		right: 8px;
+		width: 320px;
+		top: 20px;
+	}
+
+}
+
+
+  
+  /* Styles for screens between 601px and 900px */
+  @media (min-width: 824px) and (max-width: 900px) {
+
+	.extra1 { /* Donut */
+	    top: 160px; 
+	    left: 260px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 1000px; 
+			left: 260px; 
+		}
+
+		.extra3 { /* Kriskras */
+			top: 1840px; 
+			left: 240px; 
+		}
+
+		.extra4 { /* Star */
+			top: 3080px; 
+			left: 240px; 
+		}
+
+		.extra5 { /* Planet */
+			top: 4720px; 
+			left: 284px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			text-align: center;
+			width: 280px;
+			right: 124px;
+			bottom: 120px;
+		}
+        /* So What is This About? */
+		.explanation {
+			text-align: center;
+			width: 380px;
+			position: relative;
+			top: 800px;
+			left: 180px;
+		}
+
+		/* Participation */
+		.participation {
+			width: 280px;
+			position: relative;
+			top: 1124px;
+			left: 180px;
+			text-align: center;
+		}
+
+		/* Benefits */
+		.benefits {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 180px;
+		}
+
+		/* Requirements */
+		.requirements {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 180px;
+		}
+
+
+	    footer {
+		    position: absolute;
+		    top: 5024px;
+		    left: 200px;
+	    }
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 0px;;
+			left: -84px;
+			text-align: center;
+		}
+
+		.summary {
+			position: relative;
+			top: 5000px;
+		}
+
+		.summary p {
+			text-align: center;
+			left: 100px;
+			width: 320px;
+			top: 20px;
+		}
+  }
+
+  @media (min-width: 900px) and (max-width: 1024px) {
+
+	.extra1 { /* Donut */
+	        top: 160px; 
+	        left: 300px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 1000px; 
+			left: 260px; 
+		}
+
+		.extra3 { /* Kriskras */
+			top: 1840px; 
+			left: 240px; 
+		}
+
+		.extra4 { /* Star */
+			top: 3080px; 
+			left: 264px; 
+		}
+
+		.extra5 { /* Planet */
+			top: 4720px; 
+			left: 284px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			text-align: center;
+			width: 280px;
+			right: 124px;
+			bottom: 120px;
+		}
+        /* So What is This About? */
+		.explanation {
+			text-align: center;
+			width: 380px;
+			position: relative;
+			top: 800px;
+			left: 180px;
+		}
+
+		/* Participation */
+		.participation {
+			width: 280px;
+			position: relative;
+			top: 1124px;
+			left: 200px;
+			text-align: center;
+		}
+
+		/* Benefits */
+		.benefits {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 180px;
+		}
+
+		/* Requirements */
+		.requirements {
+			text-align: center;
+			width: 280px;
+			position: relative;
+			top: 1480px;
+			left: 180px;
+		}
+
+
+	    footer {
+		    position: absolute;
+		    top: 5024px;
+		    left: 200px;
+	    }
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 0px;;
+			left: -84px;
+			text-align: center;
+		}
+
+		.summary {
+			position: relative;
+			top: 5000px;
+		}
+
+		.summary p {
+			text-align: center;
+			left: 100px;
+			width: 320px;
+			top: 20px;
+		}
+  }
+
+  @media (min-width: 1024px) and (max-width: 1264px) {
+
+	.extra1 { /* Donut */
+	    top: 160px; 
+	    left: 40px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 540px; 
+			left: 464px; 
+		}
+
+		.extra3 { /* Kriskras */
+			top: 1124px; 
+			left: 32px; 
+		}
+
+		.extra4 { /* Star */
+			top: 1920px; 
+			left: 500px; 
+		}
+
+		.extra5 { /* Planet */
+			top: 2600px; 
+			left: 284px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			width: 400px;
+			right: 20px;
+			bottom: 480px;
+		}
+        /* So What is This About? */
+		.explanation {
+			width: 380px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		/* Participation */
+		.participation {
+			width: 400px;
+			position: relative;
+			top: -100px;
+			left: 336px;
+		}
+
+		/* Benefits */
+		.benefits {
+			width: 780px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		/* Requirements */
+		.requirements {
+			width: 380px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 52px;;
+			left: 124px;
+			text-align: center;
+		}
+
+		footer {
+		    position: absolute;
+		    top: 2924px;
+		    left: 200px;
+	    }
+
+		.summary {
+			position: relative;
+			top: 2800px;
+		}
+
+		.summary p {
+			text-align: center;
+			left: 120px;
+			width: 320px;
+			top: 20px;
+		}
+  }
+
+  @media (min-width: 1264px) and (max-width: 1424px) {
+
+	.extra1 { /* Donut */
+	    top: 160px; 
+	    left: 200px; 
+		}
+
+		.extra2 { /* Rocket */
+			top: 540px; 
+			left: 624px;
+		}
+
+		.extra3 { /* Kriskras */
+			top: 1124px; 
+			left: 144px; 
+			background-size: 400px;
+		}
+
+		.extra4 { /* Star */
+			top: 1920px; 
+			left: 680px; 
+			background-size: 600px;
+		}
+
+		.extra5 { /* Planet */
+			top: 2600px; 
+			left: 524px; 
+		}
+
+
+
+		/* The Road to Enlightenment  */
+		.preamble {
+			width: 400px;
+			right: 20px;
+			bottom: 480px;
+		}
+        /* So What is This About? */
+		.explanation {
+			width: 380px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		/* Participation */
+		.participation {
+			width: 400px;
+			position: relative;
+			top: -100px;
+			left: 600px;
+		}
+
+		/* Benefits */
+		.benefits {
+			width: 780px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		/* Requirements */
+		.requirements {
+			width: 380px;
+			position: relative;
+			top: -100px;
+			left: -40px;
+		}
+
+		.requirements p[role="contentinfo"] {
+			position: relative;
+		    top: 72px;;
+			left: 380px;
+			text-align: center;
+		}
+
+		footer {
+		    position: absolute;
+		    top: 2924px;
+		    left: 460px;
+	    }
+
+		.summary {
+			position: relative;
+			top: 2924px;
+		}
+
+		.summary p {
+			text-align: center;
+			left: 272px;
+			width: 500px;
+			top: 20px;
+		}
+  }
